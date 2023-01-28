@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Colorful creature</title>
+    <style>
+        h1{
+            color : rgb(33, 163, 65);
+        }
+        body{
+            background-color : rgb(207, 217, 197);
+        }
+        p{
+            color : rgb(13, 20, 17);
+        }
+    </style>  
+        
+        
+    </head>
+    <body>
+        
+        <h1>The coolest creature</h1>
+        <img src = "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/cheetah.png">
+        <p>The <em>cheetah</em> is awesome because <strong>the fastest of all land mammals: it can reach speeds of up to 110 km/h in 3 seconds.</strong>.</p>
+        
+    </body>
+</html>
