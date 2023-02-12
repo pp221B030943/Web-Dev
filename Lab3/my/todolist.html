@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="todolist.js">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
+        <h3>ToDo List</h3>
+    </header>
     <div class="container">
-        <h2>To Do List</h2>
-        <input type="text" id="new-task" placeholder="New Task">
-        <button id="new-btn">Add</button>
-        <ul id="tasks">
+        <h2>ToDo List</h2>       
+            <input type="text" id="new-task" placeholder="New Task">
+            <button id="add-btn">Add</button>
+        <ul id="all-tasks">
         </ul>
     </div>
     <script src="todolist.js"></script>
