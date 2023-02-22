@@ -12,17 +12,18 @@
 }
 
 .img {
-    width: 300px;
+    width: 200px;
     height: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: 50%;
 }
 
 .img img {
-    width: 80%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     object-fit: contain;
 }
 
