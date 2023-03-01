@@ -46,9 +46,9 @@ export const products = [
     name: "GIVENCHY L'Interdit Rouge",
     price: 210,
     description: 'The best cherry fragrance', 
-    img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h65/h0f/33125684084766/apple-macbook-air-2020-13-3-mgn63-seryj-100797845-1-Container.jpg",
+    img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h99/hd3/46406419546142/givenchy-l-interdit-rouge-edp-2021-50-ml-102521378-1.jpg",
     url: "https://kaspi.kz/shop/p/givenchy-l-interdit-rouge-2021-parfjumernaja-voda-edp-50-ml-102521378/?c=750000000#!/item",
-    img2 : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h06/hbb/52177862557726/apple-macbook-air-2020-13-3-mgn63-seryj-100797845-2-Container.jpg",
+    img2 : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hcd/hd2/52334525841438/givenchy-l-interdit-rouge-2021-parfumernaa-voda-edp-50-ml-102521378-2.jpg",
     rating: 3
   },
   {
