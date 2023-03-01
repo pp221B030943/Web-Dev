@@ -10,7 +10,7 @@ import { Product, products } from '../products';
 })
 export class ProductListComponent {
   selectedFilter : string = 'None';
-  productss: Product[] = [];
+  productss: Product[] = products;
   filteredItems = [...products];
 
   share(url: string) {
