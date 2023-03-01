@@ -5,7 +5,7 @@ export interface Product {
   description: string;
   img: string;
   img2: string;
-  img3: string;
+  img3?: string;
   url: string;
   rating: number;
   likes: number;
