@@ -16,6 +16,10 @@ export class AlbumPhotosComponent implements OnInit{
     this.photos = [];
   }
 
+  goToLink(link: string){
+    window.open(link, "_blank");
+  }
+
   ngOnInit(){
 
     this.route.paramMap.subscribe((params) => {

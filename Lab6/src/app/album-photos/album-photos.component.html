@@ -1,8 +1,11 @@
-<p>album-photos works!</p>
+<button class="back-button" routerLink="..">Back</button><br>
 
-<button routerLink="..">Back</button>
-
-<div *ngFor="let photo of photos">
-  {{photo.id}} {{photo.title}}
-  <img src="{{photo.url}}">
+<div class="photo-gallery" *ngFor="let photo of photos">
+  <div class="photo-block">
+  <div class="title-block">
+    <div class="number">{{photo.id}}</div>
+    {{photo.title}}
+  </div>
+  <img (click)="goToLink(photo.url)" src="{{photo.thumbnailUrl}}">
+  </div>
 </div>

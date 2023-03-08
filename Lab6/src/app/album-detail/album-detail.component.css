@@ -1,0 +1,47 @@
+.back-button, .next-button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 40px;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+  
+.next-button{
+    padding: 10px 40px 10px 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+  
+  
+  
+.change-button{
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+  
+.save-button{
+    background-color: #78c030;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+}
+  
+input{
+    width: 400px;
+    height: 20px;
+}
+  
+span{
+    color: gray;
+    font-size: 12px;
+}
