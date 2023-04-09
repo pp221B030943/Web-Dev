@@ -5,28 +5,6 @@ from django.http.response import JsonResponse
 from api.models import Company, Vacancy
 # Create your views here.
 
-# @csrf_exempt
-# def company_list(request):
-#     if request.method == 'GET':
-#         companies = Company.objects.all()
-#         companies_json = [p.to_json() for p in companies]
-#         return JsonResponse(companies_json, safe=False)
-#     if request.method == 'POST':
-#         data = json.loads(request.body)
-#         company_name = data.get('name', '')
-#         company = Company.objects.create(name=company_name)
-#         return JsonResponse(company.to_json())
-
-
-# @csrf_exempt
-# def get_company(request, id):
-#     try: company = Company.objects.get(id = get_company)
-#     except Company.DoesNotExist as e:
-#         return JsonResponse({'error':str(e)}, status = 400)
-    
-#     if request.method =='GET':
-#         return JsonResponse(company.to_json())
-
 def company_list(request):
     return JsonResponse(
         list(Company.objects.values()), safe=False, json_dumps_params={'indent' : 2})
