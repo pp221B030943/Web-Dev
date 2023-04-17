@@ -1,0 +1,52 @@
+img{
+    margin:30px
+  }
+  h2{
+    margin-left: 460px;
+    position: absolute;
+    bottom: 330px;
+    font-size: 70px;
+    text-decoration: underline;
+    color: black;
+  }
+  .prproducts{
+    min-width: 1300px;
+    min-height: 300px;
+    width: calc(33.3% - 20px);
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-color: #000;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 24px;
+    overflow: hidden;
+  }
+  .a:hover {
+    border-width: 10px;
+    background: #e0e0e0;
+  }
+  .d{
+    font-size: 20px;
+    line-height: 2em;
+  }
+  .r{
+    text-align: center;
+    font-size: 20px;
+  }
+  .shr{
+    text-align: center;
+    font-size: 20px;
+  }
+  /*
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at https://angular.io/license
+  */
+  
