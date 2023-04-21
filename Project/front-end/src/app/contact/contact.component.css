@@ -1,4 +1,4 @@
-.card-body{
+/* .card-body{
     font-family: "Felix Titling";
     font-size: 50px;
     text-align: center;
@@ -36,5 +36,47 @@
   .awka {
     color: #fffcfc;
     font-family: "Felix Titling";
+  }
+   */
+
+
+
+   .contacts {
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+  }
+  
+  .contacts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .contact-card i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ff9d3c;
+  }
+  
+  .contact-card p {
+    margin: 0;
   }
   

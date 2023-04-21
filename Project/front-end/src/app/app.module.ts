@@ -90,6 +90,7 @@ import { LikeComponent } from './like/like.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -104,14 +105,8 @@ import { ContactComponent } from './contact/contact.component';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
-      { path: 'contact', component: ContactComponent }
-
-      // { path: 'product-list2', component: ProductList2Component },
-      // { path: 'product-list3', component: ProductList3Component },
-      // { path: 'product-list4', component: ProductList4Component },
-      // { path: 'products2/:productId', component: ProductDetails2Component },
-      // { path: 'products3/:productId', component: ProductDetails3Component },
-      // { path: 'products4/:productId', component: ProductDetails4Component },
+      { path: 'contact', component: ContactComponent },
+      { path: 'login', component: LoginComponent }
     ])
   ],
   declarations: [
