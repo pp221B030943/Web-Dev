@@ -1,0 +1,12 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  background-color: #80A592;
+}
+
+
+.product_image{
+  width: 350px;
+}

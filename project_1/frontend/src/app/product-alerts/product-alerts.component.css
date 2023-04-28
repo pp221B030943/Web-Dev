@@ -1,0 +1,20 @@
+.button-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    }
+    
+    .button-box button {
+    background-color: #2c4b3c;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    }
+    
+    .button-box button:hover {
+    background-color: #73a58b;
+    color: #2c4b3c;
+    }
