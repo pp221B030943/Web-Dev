@@ -11,7 +11,9 @@ describe('ShippingComponent', () => {
       declarations: [ ShippingComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ShippingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -11,7 +11,9 @@ describe('TopBarComponent', () => {
       declarations: [ TopBarComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(TopBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

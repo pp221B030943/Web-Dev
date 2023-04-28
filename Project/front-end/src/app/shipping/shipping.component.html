@@ -1,6 +1,30 @@
-<h3>Shipping Prices</h3>
+<!-- <div class="main-content">
+  <h3>Shipping Prices</h3>
 
-<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
-  <span>{{ shipping.type }}</span>
-  <span>{{ shipping.price | currency }}</span>
+  <div class="shipping-item" *ngFor="let shipping of shippings">
+    <span>{{ shipping.type }} - </span>
+    <span>{{ shipping.price }}</span>
+  </div>
+
+</div> -->
+
+<!-- <div class="main-content">
+  <h3>Shipping Prices</h3>
+  <input type="checkbox" ngModel="Shipping.Controllers">
+  <div class="shipping-item" *ngFor="let shipping of shippings">
+    <span>{{ shipping.type }} - </span>
+    <span>{{ shipping.price }}</span>
+  </div>
+
+</div> -->
+
+<div class="main-content">
+  <h3>Shipping Prices</h3>
+
+  <div class="shipping-item" *ngFor="let shipping of shippings">
+    <input type="checkbox" id="{{ shipping.type }}" name="{{ shipping.type }}">
+    <label for="{{ shipping.type }}">{{ shipping.type }} - {{ shipping.price }}</label>
+  </div>
+
 </div>
+

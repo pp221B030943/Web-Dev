@@ -1,75 +1,27 @@
-<app-top-bar></app-top-bar>
+<div class="main-content">
+  <div *ngIf="!is_logged">
+    
+    <div class="login-form">
+      <h1>Login form</h1>
 
-<div class="container">
-  <router-outlet></router-outlet>
+    <div class="form-group">
+      <p>Username: <input type="text" [(ngModel)]="username"></p>
+    </div>
+
+    <div class="form-group">
+      <p>Password: <input type="password" [(ngModel)]="password"></p>
+    </div>
+
+    <div class="form-group">
+      <button (click)="login()">Login</button>
+    </div>
+    </div>
+
 </div>
 
-<footer class="site-footer">
-  <div class="footer-widgets">
-    <div class="footer-widget">
-      <h4>О нас</h4>
-      <p>Компания SkinBeauty предоставляет высококачественные косметические продукты известных мировых брендов.</p>
-      <ul class="social-links">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-      </ul>
-    </div>
-    <div class="footer-widget">
-      <h4>Категории</h4>
-      <ul class="categories">
-        <li><a href="/categories/1">Skin</a></li>
-        <li><a href="/categories/2">Lashes</a></li>
-        <li><a href="/categories/3">Hair</a></li>
-        <li><a href="/categories/4">Body</a></li>
-        <li><a href="/categories/5">Brows</a></li>
-        <li><a href="/categories/6">Lips</a></li>
-      </ul>
-    </div>
-    <div class="footer-widget">
-      <h4>Поддержка</h4>
-      <!-- <ul class="support">
-        <li><a routerLink="/about">О нас</a></li>
-        <li><a href="/contacts">Контакты</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">Возврат и обмен</a></li>
-      </ul> -->
-    </div>
-    <div class="footer-widget">
-      <h4>Контакты</h4>
-      <ul class="contact-info">
-        <li><i class="fa fa-map-marker"></i> г. Алматы, ул. Толе би, 123</li>
-        <li><i class="fa fa-phone"></i> +7 (727) 123-45-67</li>
-        <li><i class="fa fa-envelope"></i> info@skinbeauty.kz</li>
-      </ul>
-    </div>
-  </div>
-  <div class="site-info">
-    <p>2023 YourSkin </p>
-  </div>
-</footer>
-<!-- <header> -->
-  <!-- Navigation bar -->
-  <!-- <nav>
-    <ul>
-      <li><a href="home/">Home</a></li>
-      <li><a href="about/">About</a></li>
-      <li><a href="category/">Categories</a></li>
-      <li><a href="contacts/">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main> -->
-  <!-- Main content -->
-  <!-- <section>
-    <h1>Welcome to YourSkin</h1>
-    <p>Our mission is to provide high-quality beauty products that enhance your natural beauty.</p>
-    <button>Shop Now</button>
-  </section>
-</main>
-
-<footer> -->
-  <!-- Footer -->
-  <!-- <p>&copy; 2023 YourSkin</p>
-</footer> -->
+<div *ngIf="is_logged">
+    <app-top-bar class="header"></app-top-bar>
+    <li class="logout"><a (click)="logout()" routerLinkActive="active">Logout</a></li>
+    <router-outlet class="main"></router-outlet>
+    <app-footer class="footer"></app-footer>
+</div>

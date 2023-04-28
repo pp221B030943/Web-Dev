@@ -1,37 +1,7 @@
-
-<!-- <a [routerLink]="['/']">
-    <h2>YourSkin</h2>
-  </a>
-  <a [routerLink]="['/categories']">Categories</a>
-  <a routerLink="/about" > About Us</a>
-  <a routerLink="/contact" > Contact</a>
-  <a routerLink="/login" > Login</a>
-
-  <a routerLink="/cart">
-  <i class="material-icons">Shopping Cart</i>
-</a>
- -->
-
-
-
-
- <header>
-  <nav>
-    <!-- <a [routerLink]="['/']">
-      <h2>    YourSkin     </h2>
-    </a> -->
-    <a routerLink="/">  Home  </a>
-    <a routerLink="/categories">  Categories  </a>
-    <a routerLink="/cart">  Cart  </a>
-    <a routerLink="/about" >  About Us    </a>
-    <a routerLink="/contact">  Contacts  </a>
-    <a routerLink="/login" >  Login  </a>
-  </nav>
-  <a routerLink="/">
-    <h2>    YourSkin     </h2>
-  </a>
-  <div class="search">
-    <input type="text" placeholder="Search">
-    <button type="button">Search</button>
-  </div>
-</header>
+<ul class="nav">
+  <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+  <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+  <li><a routerLink="/categories" routerLinkActive="active">Categories</a></li>
+  <li><a routerLink="/products" routerLinkActive="active">All Products</a></li>
+  <li><a routerLink="/cart" routerLinkActive="active">Cart</a></li>
+</ul>

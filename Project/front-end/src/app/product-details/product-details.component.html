@@ -1,89 +1,36 @@
- <!-- <h2>Product Details</h2>
+<div class="main-content">
+  <button class="goback" (click)="goBack()">Go Back</button>
+  <div *ngIf="product">
+    <h2> Product Details # {{product.id}}</h2>
 
-<div *ngIf="product">
-  <div>
-    <a class="newImg" href={img}></a>
-        <a class="gallery" href={{product.gal1}}><img src={{product.gal1}} width=200> </a>
-        <a class="gallery" href={{product.gal2}}><img src={{product.gal2}} width=200> </a>
-        <a class="gallery" href={{product.gal3}}><img src={{product.gal3}} width=200> </a>
-  </div>
-  <div class="description alert alert-success">
     <h3>{{ product.name }}</h3>
-    <h4>{{ product.price | currency }}</h4>
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <p *ngIf="product.rating">
+      Rating: <span class="fa fa-star checked"></span> {{ product.rating }}
+    </p>
+    <p *ngIf="product.price">Price: ${{ product.price }}</p>
+
+    <p>
+      <img class="product_image"
+        *ngIf="product.image"
+        src="{{ product.image }}"
+        [class.img]="product"
+      />
+    </p>
+    <button class="buy-button" type="button" (click)="addToCart(product)">Buy</button>
+
+    <h3>Feedbacks</h3>
+
+    <app-feedback-details [productId]="product.id">
+    </app-feedback-details>
+
   </div>
-  <button style="font-size: 30px; margin-left: 450px" (click)="addToCart(product)">Buy</button>
-</div>  -->
 
 
-  <!-- <div class="product-details">
-  <div class="product-image">
-    <img [src]="product.image" alt="{{product.name}}"> 
-    <div class="carousel">
-  
-      <input type="checkbox" class="faux-ui-facia"> 
-      <div class="slide" slide="3" annot="Pics from carousel">
-        <a class="gallery" href={{product.gal1}}><img src={{product.gal1}} width=200> </a>
-      </div>
-    
-      <input type="checkbox" class="faux-ui-facia">
-      <div class="slide" slide="2" annot="Beautiful pics">
-        <a class="gallery" href={{product.gal2}}><img src={{product.gal2}} width=200> </a>
-      </div>
-    
-      <input type="checkbox" class="faux-ui-facia">
-    
-      <div class="slide" slide="1" annot="Photos from kaspi.kz">
-        <a class="gallery" href={{product.gal1}}><img src={{product.gal1}} width=200> </a>
-      </div>
-  </div>
-  <div class="product-info">
-    <h2>{{product.name}}</h2>
-    <p>{{product.category}}</p>
-    <p>{{product.price}} $</p>
-    <button (click)="addToCart(product)"> Buy </button>
-  </div>
-  <div class="product-description">
-    <h3>Description</h3>
-    <p>{{product.description}}</p>
-  </div>
-</div>  -->
-
-
-<h1 style="text-align: center; width: 100%;">Product Details</h1>
-
-
-<div *ngIf="product" class = "details">
-
-
-  <div class="carousel">
-  
-    <input type="checkbox" class="faux-ui-facia"> 
-    <div class="slide" slide="3" annot="Pics from carousel">
-      <img [src] = "product.gal1" alt="Slide 3">
-    </div>
-  
-    <input type="checkbox" class="faux-ui-facia">
-    <div class="slide" slide="2" annot="Beautiful pics">
-      <img [src] = "product.gal2" alt="Slide 2">
-    </div>
-  
-    <input type="checkbox" class="faux-ui-facia">
-  
-    <div class="slide" slide="1" annot="Photos">
-      <img [src] = "product.img3" alt="Slide 1">
-    </div>
-     
-    <div class="counter" count="5"></div>
-   
-  </div>
-  
-  <div class = "description">  
-    <h2 style = "font-size: 35px;">{{ product.name }}</h2>
-    <div class="line"></div>
-    <h2>Price : {{ product.price | currency }}</h2>
-    <div class="line"></div>
-    <p>Description: {{ product.description }}</p>
-    <button type="button" (click)="addToCart(product)">Buy</button>    
-  </div>
+  <!--
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at https://angular.io/license
+  -->
 
 </div>

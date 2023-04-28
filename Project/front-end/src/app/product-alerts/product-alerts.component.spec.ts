@@ -11,7 +11,9 @@ describe('ProductAlertsComponent', () => {
       declarations: [ ProductAlertsComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ProductAlertsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

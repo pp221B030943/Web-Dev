@@ -1,67 +1,32 @@
+.active {
+  background-color: #273830;
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 20px;
-    background-color: #f0e2ca;
-    }
-    
-    header nav {
-    display: flex;
-    gap: 20px;
-    }
-    
-    header nav a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #333;
-    }
-    
-    header nav a:hover {
-    color: #777;
-    }
-    
-    header nav a.active {
-    font-weight: bold;
-    }
-    
-    header img {
-    height: 50px;
-    width: auto;
-    }
-    
-    header .search {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    }
-    
-    header .search input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-bottom: 1px solid #333;
-    font-size: 1rem;
-    color: #333;
-    }
-    
-    header .search input[type="text"]:focus {
-    outline: none;
-    }
-    
-    header .search button {
-    padding: 5px 10px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    }
-    
-    header .search button:hover {
-    background-color: #777;
-    }
-    
-    header .search button:active {
-    transform: scale(0.95);
-    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #73A58B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #0e311f;
+}
+
+.logout{
+  float: right
+}
