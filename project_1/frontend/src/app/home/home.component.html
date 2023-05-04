@@ -1,7 +1,85 @@
-<div class="main-content">
+<!-- <div class="main-content">
   <img src="https://pbs.twimg.com/media/EEEMAPYX4AEADp4?format=jpg&name=4096x4096">
   <div class="text">
     <h1>YourSkin is #1 online shopping platform in Kazakhstan</h1>
     <h4>by all financial and operational metrics with a leading position in other CIS countries</h4>
   </div>
-</div>
+</div> -->
+
+
+<header>
+  <!-- Верхнее меню с логотипом и ссылками на социальные сети -->
+  <!-- <nav class="top-menu">
+    <div class="container">
+      <a href="/" class="logo"><img src="logo.png" alt="Skin Beauty"></a>
+      <ul class="social-links">
+        <li><a href="#">1<i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#">2<i class="fab fa-instagram"></i></a></li>
+        <li><a href="#">3<i class="fab fa-vk"></i></a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <!-- Главное меню сайта -->
+  <nav class="main-menu">
+    <div class="navbar">
+      <ul>
+        <li><a href="/"></a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Секция с баннером -->
+  <section class="banner">
+    <div class="container">
+      <h1>Get perfect skin with YourSkin Cosmetics</h1>
+      <a href="/products" class="btn btn-primary">Details</a>
+    </div>
+    <div class="carousel">
+      <input type="checkbox" class="faux-ui-facia" checked>
+      <div class="slide" slide="1" annot="Первый слайд">
+        <img src="https://2.bp.blogspot.com/-JgM8kEc-cbc/V5z0p6L-k0I/AAAAAAAAKLk/YDtddbIYJnksbdOqXPhsnsOwNSDCF7KzACLcB/s1600/my%2Btop%2B10%2Bbeauty%2Blaunches%2Bof%2B2016%2Bso%2Bfar%2Bv2.jpg" alt="Первый слайд">
+      </div>
+      <input type="checkbox" class="faux-ui-facia">
+      <div class="slide" slide="2" annot="Второй слайд">
+        <img src="https://c8.staticflickr.com/8/7294/26977181263_1beca8f167_o.jpg" alt="Второй слайд">
+      </div>
+      <input type="checkbox" class="faux-ui-facia">
+      <div class="slide" slide="3" annot="Третий слайд">
+        <img src="https://lifewithme.com/wp-content/uploads/2017/08/IMG_9373-Edit.jpg" alt="Третий слайд">
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция с категориями товаров -->
+  <section class="categories">
+    <div class="container">
+      <h2>Categories</h2>
+      <div class="category">
+        <a class="link" [routerLink]=" ['/categories', 1]">
+          <img src="https://i.pinimg.com/originals/c3/9b/87/c39b871c57b4c2601b586081e15e22bd.jpg" alt="Category 1">
+          <h3>Skin</h3>
+        </a>
+      </div>
+      <div class="category">
+        <a class="link" [routerLink]=" ['/categories', 3]">
+          <img src="https://i.pinimg.com/originals/1b/f6/32/1bf6326a64129af86a90b1d46eb93837.jpg" alt="Category 1">
+          <h3>Lash</h3>
+        </a>
+      </div>
+      <div class="category">
+        <a class="link" [routerLink]=" ['/categories', 5]">
+          <img src="https://avatars.mds.yandex.net/i?id=3cda9a0cf8b2e503a3c24dc395559493cf28a32b-8185147-images-thumbs&n=13" alt="Category 1">
+          <h3>Perfumes</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+

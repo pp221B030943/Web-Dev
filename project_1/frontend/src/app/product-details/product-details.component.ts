@@ -11,7 +11,7 @@ import { ProductService } from '../shared/services/product.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  product: Product | undefined;
+  product: Product;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,6 +36,7 @@ export class ProductDetailsComponent implements OnInit {
 
   getProduct(id: number){
     this.productService.getProduct(id).subscribe((product) => this.product = product)
+    console.log(this.product)
   }
 
 }

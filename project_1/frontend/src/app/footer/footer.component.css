@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -112,4 +112,140 @@ footer{
   color: #a2a5a5;
 }
 
+ */
 
+
+ /* footer {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.footer-bottom p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+} */
+
+
+.footer {
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-item {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.footer-item h3 {
+  margin-top: 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+.social-links img{
+  width: 40px;
+  height: 40px;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #e0e0e0;
+  text-align: center
+}
+
+
+.footer-item {
+  margin-bottom: 30px;
+  height: 400px; 
+  background-color: #ad8778;
+}
+
+@media (min-width: 992px) {
+  .footer-item {
+    height: auto; /* сбрасываем фиксированную высоту на больших экранах */
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-item {
+    height: 220px; /* увеличиваем высоту для меньших экранов, чтобы элементы занимали больше места по вертикали */
+  }
+}
+
+.col-md-4 {
+  /* устанавливаем ширину для каждой колонки */
+  width: calc(100% / 3);
+  height: 300px;
+  float: left; 
+}
+.col-md-12{
+  background-color: #ad8778;
+}
+
+@media (max-width: 767px) {
+  .col-md-4 {
+    width: 100%; /* на маленьких экранах делаем колонки на всю ширину */
+  }
+}

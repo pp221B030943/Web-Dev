@@ -28,13 +28,14 @@ button:hover{
   padding-bottom: 300px;
   margin-left: 50px;
   margin-right: 50px;
+  font-family: 'Montserrat', sans-serif;
   }
   
   .goback{
   padding: 5px 10px;
   border-radius: 5px;
-  border: solid 1px #000000;
-  background-color: #FFFFFF;
+  border: solid 1px #2e2c2c;
+  background-color: #f5e8e8;
   float: right;
   margin-right: 200px;
   }
@@ -46,6 +47,6 @@ button:hover{
   background-color: #FFFFFF;
   }
   button:hover{
-  background-color: #000000;
+  background-color: #5e3434;
   color: #FFFFFF;
   }

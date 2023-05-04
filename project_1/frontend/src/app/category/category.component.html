@@ -1,6 +1,51 @@
-<div class="main-content">
+<!-- <div class="main-content">
   <ul *ngFor="let category of categories" >
     <li  class="item"><a routerLink="/categories/{{category.id}}"> {{category.name}} </a></li>
+    <a class="link" [routerLink]=" ['/categories', 1]">
+      Skin
+      <img src="https://5.imimg.com/data5/IG/SH/MY-50446778/organic-essential-oils-500x500.jpg">
+    </a>
+    <a class="link" [routerLink]=" ['/categories', 2]">
+      Hair
+      <img src="https://5.imimg.com/data5/IG/SH/MY-50446778/organic-essential-oils-500x500.jpg">
+    </a>
+    <a class="link" [routerLink]=" ['/categories', 3]">
+      Body
+      <img src="https://5.imimg.com/data5/IG/SH/MY-50446778/organic-essential-oils-500x500.jpg">
+    </a>
   </ul>
-</div>
+</div> -->
 
+<div class="container">
+  <div class="category">
+    <a class="link" [routerLink]=" ['/categories', 1]">
+    <img src="https://i.pinimg.com/originals/c3/9b/87/c39b871c57b4c2601b586081e15e22bd.jpg" alt="Category 1">
+    <h3>Skin</h3>
+    </a>
+  </div>
+  <div class="category">
+    <a class="link" [routerLink]=" ['/categories', 2]">
+      <img src="https://i.pinimg.com/originals/ac/30/d8/ac30d8ca05cfbf40ad5b7703760f72f8.jpg" alt="Category 1">
+      <h3>Hair</h3>
+    </a>
+  </div>
+  <div class="category">
+    <a class="link" [routerLink]=" ['/categories', 3]">
+      <img src="https://i.pinimg.com/originals/1b/f6/32/1bf6326a64129af86a90b1d46eb93837.jpg" alt="Category 1">
+      <h3>Lash</h3>
+    </a>
+  </div>
+  <div class="category">
+    <a class="link" [routerLink]=" ['/categories', 4]">
+      <img src="https://avatars.mds.yandex.net/i?id=a185caba7616716fff8908235adf999d-5238116-images-thumbs&n=13" alt="Category 1">
+      <h3>Brows</h3>
+    </a>
+  </div>
+  <div class="category">
+    <a class="link" [routerLink]=" ['/categories', 5]">
+      <img src="https://avatars.mds.yandex.net/i?id=3cda9a0cf8b2e503a3c24dc395559493cf28a32b-8185147-images-thumbs&n=13" alt="Category 1">
+      <h3>Perfumes</h3>
+    </a>
+  </div>
+  
+ 
