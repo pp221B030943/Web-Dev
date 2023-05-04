@@ -1,3 +1,51 @@
+// import { Component, OnInit } from '@angular/core';
+// import { CartService } from '../shared/services/cart.service';
+// import { FormBuilder } from '@angular/forms';
+
+// @Component({
+//   selector: 'app-cart',
+//   templateUrl: './cart.component.html',
+//   styleUrls: ['./cart.component.css']
+// })
+// export class CartComponent{
+
+//   items = this.cartService.getItems();
+//   totalPrice = this.cartService.totalPrice;
+//   shippings: any;
+
+
+
+//   checkoutForm = this.formBuilder.group({
+//     name: '',
+//     address: ''
+//   });
+
+//   constructor(
+//     public cartService: CartService,
+//     private formBuilder: FormBuilder,
+//   ) { }
+
+//   onSubmit(): void {
+//     // Process checkout data here
+//     this.items = this.cartService.clearCart();
+//     console.warn('Your order has been submitted', this.checkoutForm.value);
+//     this.checkoutForm.reset();
+//   }
+//   ngOnInit(): void {
+//   }
+
+//   removeItem(item: any){
+//     this.cartService.removeCartItem(item);
+//   }
+
+//   clear(){
+//     this.items = this.cartService.clearCart();
+//   }
+  
+
+// }
+
+
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../shared/services/cart.service';
 import { FormBuilder } from '@angular/forms';
@@ -7,13 +55,11 @@ import { FormBuilder } from '@angular/forms';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent{
+export class CartComponent {
 
   items = this.cartService.getItems();
-  totalPrice = this.cartService.totalPrice();
+  totalPrice = this.cartService.totalPrice;
   shippings: any;
-
-
 
   checkoutForm = this.formBuilder.group({
     name: '',
@@ -31,16 +77,14 @@ export class CartComponent{
     console.warn('Your order has been submitted', this.checkoutForm.value);
     this.checkoutForm.reset();
   }
-  ngOnInit(): void {
-  }
 
-  removeItem(item: any){
+  ngOnInit(): void {}
+
+  removeItem(item: any) {
     this.cartService.removeCartItem(item);
   }
 
-  clear(){
+  clear() {
     this.items = this.cartService.clearCart();
   }
-  
-
 }

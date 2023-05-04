@@ -10,6 +10,7 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { CartComponent } from './cart/cart.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FeedbackDetailsComponent } from './feedback-details/feedback-details.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'contacts',
+    component: ContactComponent
   },
   {
     path: 'categories',

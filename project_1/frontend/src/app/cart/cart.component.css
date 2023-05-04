@@ -1,7 +1,8 @@
-.main-content {
+/* .main-content {
   padding-bottom: 450px;
   margin-left: 100px;
   background-color: #94a5a773;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -100,4 +101,121 @@ input[type="text"] {
 .cart-table td:last-child {
   text-align: right;
   font-weight: bold;
+} */
+
+
+
+/* Стили для таблицы товаров */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  background-color: #f5e8e8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5e8e8;
+}
+
+/* Стили для кнопок */
+button {
+  border: none;
+  background-color: #b3846e;
+  color: rgb(37, 34, 34);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.empty {
+  text-align: center;
+  margin-left: 50%;
+}
+
+/* Стили для формы оформления заказа */
+form {
+  border: #554f4f;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button.button {
+  margin-top: 20px;
+}
+
+/* Стили для контейнера */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #554f4f;
+  border-radius: 4px;
+  
+}
+
+/* Стили для изображения товара */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b3846e;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8b532e;
+} */

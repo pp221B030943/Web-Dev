@@ -1,7 +1,32 @@
 .main-content{
   float: right;
   margin-right: 100px;
-  margin-top: -80px;
+  margin-top: -130px;
+}  
+
+.shipping-container {
+  padding-left: 100px;
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+}
+
+.shipping-content {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shipping-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.shipping-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 

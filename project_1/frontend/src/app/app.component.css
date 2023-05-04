@@ -1,4 +1,3 @@
-
 li {
   float: right;
   list-style: none;
@@ -8,7 +7,7 @@ li {
 
 li a {
   display: block;
-  color: #eefaf3;
+  color: #222221;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -16,14 +15,62 @@ li a {
 
 
 li a:hover {
-  background-color: #80a592;
+  background-color: #a36a54;
   cursor: pointer;
 }
 
 .login-form{
-  margin-top: 70px;
-  margin-left: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 200px;
+  margin-left: 35%;
+  background-image: url('../assets/a1.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.login-form h1 {
+  margin-top: 0;
+  border-radius: 12px;
+  }
+  
+.login-form h1 {
+    margin-top: 0;
+}
+    
+    .form-group {
+    margin-bottom: 15px;
+    }
+    
+    .form-group input {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    border-radius: 8px;
+    }
+    
+    .form-group button {
+    width: 100%;
+    background-color: #bd7f46;
+    color: #fff;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 0px;
+    }
+    
+    .form-group button:hover {
+    background-color: #c77453;
+    }
 
 input{
   border-radius: 5px;
@@ -44,7 +91,56 @@ button{
 }
 
 button:hover{
-  background-color: #73a58b;
-}
+  background-color: #d09882;
+} 
 
-
+/* .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  .login-form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f5e8e8;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  }
+  
+  .login-form h1 {
+  margin-top: 0;
+  border-radius: 12px;
+  }
+  
+  .form-group {
+  margin-bottom: 15px;
+  }
+  
+  .form-group input {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  border-radius: 8px;
+  }
+  
+  .form-group button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  .form-group button:hover {
+  background-color: #0069d9;
+  }
+ */

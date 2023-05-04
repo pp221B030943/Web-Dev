@@ -26,7 +26,7 @@ export class FeedbackService {
   addFeedback(feedback: Feedback): Observable<Feedback>{
 
     return this.http.post<Feedback>(`${this.BASE_URL}/api/feedbacks/`, feedback)
-  }
+  } 
 
   updateFeedback(feedback: {body: string; product_id: number}): Observable<Feedback>{
     //@ts-ignore
