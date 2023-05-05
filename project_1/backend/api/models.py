@@ -20,7 +20,7 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     price = models.FloatField(default=0)
     rating = models.FloatField(default=0)
-    image = models.ImageField(upload_to='media/')
+    image = models.ImageField(upload_to='products/')
     link = models.TextField(default='')
     description = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, related_name='products')

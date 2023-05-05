@@ -19,7 +19,7 @@ class CategorySerializer(serializers.Serializer):
         
     
 class CategorySerializer_2(serializers.ModelSerializer):
-    proudcts = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+    products = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Category
@@ -29,7 +29,7 @@ class CategorySerializer_2(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ('id', 'name', 'rating', 'description', 'price', 'category',) 
+        fields = ('id', 'name', 'rating', 'image', 'description', 'price', 'category',)
 
 
 class FeedbackSerializer(serializers.ModelSerializer):

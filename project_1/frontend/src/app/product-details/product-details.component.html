@@ -1,6 +1,6 @@
 <div class="main-content">
   <button class="goback" (click)="goBack()">Go Back</button>
-  <div *ngIf="product">
+  <div *ngIf="product" >
     <h2> Product Details # {{product.id}}</h2>
 
     <h3>{{ product.name }}</h3>
@@ -12,7 +12,7 @@
 
     <p>
       <img class="product_image"
-        src="{{ product.image}}"
+      src="http://localhost:8000{{ product.image }}"
         [class.img]="product"
       />
     </p>
